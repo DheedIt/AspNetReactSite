@@ -3,9 +3,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddControllers();
+builder.Services.AddOpenApi();
+builder.Services.AddCors(x => x.AddPolicy("React", y => { y.WithOrigins("https://localhost:5173").AllowAnyHeader().AllowAnyMethod(); }));
 var app = builder.Build();
-
+app.MapControllers();
+app.UseCors("React");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -21,7 +24,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

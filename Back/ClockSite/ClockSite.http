@@ -1,6 +1,3 @@
 @ClockSite_HostAddress = http://localhost:5233
 
-GET {{ClockSite_HostAddress}}/weatherforecast/
-Accept: application/json
-
 ###
