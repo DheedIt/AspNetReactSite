@@ -5,10 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
-builder.Services.AddCors(x => x.AddPolicy("React", y => { y.WithOrigins("https://localhost:5173").AllowAnyHeader().AllowAnyMethod(); }));
+builder.Services.AddCors(x => x.AddPolicy("React", y => { y.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod(); }));
 var app = builder.Build();
-app.MapControllers();
 app.UseCors("React");
+app.MapControllers();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

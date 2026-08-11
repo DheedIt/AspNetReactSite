@@ -5337,19 +5337,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zhula\\.nuget\\packages\\": {}
+    "C:\\Users\\sasha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhula\\source\\repos\\WebSite\\Back\\ClockSite\\ClockSite.csproj",
+      "projectUniqueName": "C:\\Users\\sasha\\Documents\\GitHub\\AspNetReactSite\\Back\\ClockSite\\ClockSite.csproj",
       "projectName": "ClockSite",
-      "projectPath": "C:\\Users\\zhula\\source\\repos\\WebSite\\Back\\ClockSite\\ClockSite.csproj",
-      "packagesPath": "C:\\Users\\zhula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhula\\source\\repos\\WebSite\\Back\\ClockSite\\obj\\",
+      "projectPath": "C:\\Users\\sasha\\Documents\\GitHub\\AspNetReactSite\\Back\\ClockSite\\ClockSite.csproj",
+      "packagesPath": "C:\\Users\\sasha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sasha\\Documents\\GitHub\\AspNetReactSite\\Back\\ClockSite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zhula\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sasha\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -5409,7 +5409,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
